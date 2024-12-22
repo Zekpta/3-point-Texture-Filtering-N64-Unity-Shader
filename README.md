@@ -14,6 +14,7 @@ You're all set!
 Note: There are two shader options available:
 
 Normal: For standard materials.
+
 Transparency: For materials that require alpha (transparency).
 
 If you need transparency, use the N64TextureFilteringTransparency shader. Just copy and apply it to your material!
