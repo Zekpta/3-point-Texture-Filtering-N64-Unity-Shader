@@ -1,6 +1,6 @@
 Shader "Custom/N64TextureFilter" {
     Properties {
-        _MainTex ("Texture", 2D) = "white" {}  // Textura principal
+        _MainTex ("Texture", 2D) = "white" {} 
     }
     SubShader {
         Tags { "RenderType"="Opaque" }
@@ -10,7 +10,7 @@ Shader "Custom/N64TextureFilter" {
             #pragma fragment frag
             #include "UnityCG.cginc"
 
-            sampler2D _MainTex; // Textura
+            sampler2D _MainTex; 
 
             struct appdata {
                 float4 vertex : POSITION;
@@ -25,7 +25,7 @@ Shader "Custom/N64TextureFilter" {
             v2f vert (appdata v) {
                 v2f o;
                 o.pos = UnityObjectToClipPos(v.vertex);
-                o.uv = v.uv; // Passa as coordenadas UV
+                o.uv = v.uv; 
                 return o;
             }
 
